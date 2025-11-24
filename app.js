@@ -39,6 +39,16 @@ app.get("/pokemons", (req,res)=>{
    res.json(pokemons);
 });
 
+//Desafio 4
+app.post("/series",(req,res)=> {
+   const series= [
+    "The Boys",
+    "Breaking Bad",
+    "Stranger Things"
+   ];
+   res.json(series);
+});
+
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
 
